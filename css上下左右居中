@@ -3,25 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>上下左右居中-左右两栏</title>
+    <title>上下左右居中</title>
     <style>
         .div1{width: 100%;position: relative;}
-        .div2{position: absolute;width: 100px;background-color: royalblue;height: 100px;top: 50%;left: 25%;margin: -50px 0 0 -50px;}
+        .div2{background-color: royalblue;position: absolute;width: 50%;top: 0;bottom: 0;}
         .div3{float:right;width: 50%;background-color: sandybrown;right: 0;}
         .divs{height: 50px;}
         .div1:after{content: "020"; display: block; height: 0; clear: both; visibility: hidden;  }
+        .div_center{width: 100px;height: 100px;position: absolute;top: 50%;left: 50%;margin: -50px 0 0 -50px;background-color: springgreen; }
     </style>
 </head>
 <body>
+
     <div class="div1">
-        <div class="div2"></div>
+        <div class="div2">
+            <div class="div_center"></div>
+        </div>
         <div class="div3">
-            <div class="divs"></div>//可继续增加
-            <div class="divs"></div>//可继续增加
-            <div class="divs"></div>//可继续增加
-            <div class="divs"></div>//可继续增加
-            <div class="divs"></div>//可继续增加
+            <div class="divs"></div>//可继续添加
+            <div class="divs"></div>
+            <div class="divs"></div>
+            <div class="divs"></div>
+            <div class="divs"></div>
         </div>
     </div>
 </body>
+
 </html>
