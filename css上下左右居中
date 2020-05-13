@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上下左右居中-左右两栏</title>
+    <style>
+        .div1{width: 100%;position: relative;}
+        .div2{position: absolute;width: 100px;background-color: royalblue;height: 100px;top: 50%;left: 25%;margin: -50px 0 0 -50px;}
+        .div3{float:right;width: 50%;background-color: sandybrown;right: 0;}
+        .divs{height: 50px;}
+        .div1:after{content: "020"; display: block; height: 0; clear: both; visibility: hidden;  }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div class="div2"></div>
+        <div class="div3">
+            <div class="divs"></div>//可继续增加
+            <div class="divs"></div>//可继续增加
+            <div class="divs"></div>//可继续增加
+            <div class="divs"></div>//可继续增加
+            <div class="divs"></div>//可继续增加
+        </div>
+    </div>
+</body>
+</html>
